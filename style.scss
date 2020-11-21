@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow: hidden;
+    background: linear-gradient(#bedef4, #93c8ec);
+    height: 100vh;
+    font-family: "Noto Sans TC", sans-serif;
+    .wrapper {
+        margin: 70px auto;
+        width: 540px;
+        border: 1px solid #243342;
+        border-radius: 5px;
+        position: relative;
+        background: #2c3e50;
+        .btns {
+            display: flex;
+            padding: 40px 0 20px 30px;
+            a {
+                text-decoration: none;
+                padding: 15px 75px;
+                font-size: 30px;
+                color: white;
+                font-family: arial;
+                background: #2981bc;
+                border-radius: 2px;
+                &.a2 {
+                    background: #34495e;
+                }
+            }
+        }
+        .header {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            padding: 5px 0 30px 0;
+        }
+        form {
+            input {
+                width: 200px;
+                height: 45px;
+                font-size: 20px;
+                background: none;
+                border: 1px solid #3498db;
+                border-radius: 2px;
+                padding: 0 10px;
+                margin-left: 35px;
+                outline: none;
+                color: white;
+                &::placeholder {
+                    color: #7dbde8;
+                }
+                &.lastname {
+                    margin-left: 20px;
+                }
+                &.email {
+                    width: 445px;
+                    margin-top: 20px;
+                }
+                &[type="submit"] {
+                    margin: 30px 0 40px 35px;
+                    width: 465px;
+                    height: 50px;
+                    font-size: 23px;
+                    cursor: pointer;
+                    color: white;
+                    background: #2981bc;
+                    border: 1px solid #2573a7;
+                    transition: all 0.5s;
+                    &:hover {
+                        background: #2990d1;
+                    }
+                }
+            }
+        }
+        .header-login{
+            padding-bottom: 10px;
+        }
+        .login-form{
+            display: none;
+        }
+    }
+}
